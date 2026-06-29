@@ -1,0 +1,40 @@
+# ===== Барвар в Лабиринте — что НЕ заливать в git =====
+
+# --- Установка RPG Maker MV и инсталляторы (НЕ наше, огромные) ---
+RPGMV/
+_Redist/
+*.bin
+*.exe
+*.dll
+f4-rpgmv161-setup.*
+f4cg.nfo
+small-games.info.url
+_yep_category.html
+
+# --- Тяжёлые стандартные ресурсы MV (≈400 МБ) ---
+# Они есть локально и попадают в готовую сборку (Deployment), в git не нужны.
+BarbarianLabyrinth/img/
+BarbarianLabyrinth/audio/
+BarbarianLabyrinth/fonts/
+BarbarianLabyrinth/icon/
+BarbarianLabyrinth/movies/
+
+# --- Сохранения и временные файлы плейтеста ---
+BarbarianLabyrinth/save/
+*.rmmzsave
+*.rpgsave
+
+# --- Готовые сборки игры и архивы ---
+game_realize/
+*_release/
+*.zip
+*.7z
+
+# --- Старая тяжёлая git-история (бэкап рядом) ---
+_old_git_backup/
+
+# --- Node / мусор ОС / временное ---
+node_modules/
+Thumbs.db
+desktop.ini
+.DS_Store

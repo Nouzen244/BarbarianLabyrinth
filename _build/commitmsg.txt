@@ -1,0 +1,13 @@
+Rarity system Phase A: gear rarities (color + % bonus) on drop
+
+New Rarity plugin (loads after YEP_ItemCore, independent weapons/armors are on):
+every weapon/armor obtained rolls one of six rarities -- Обычный/Необычный/
+Особый/Редкий/Магический/Легендарный (weights 50/26/13/7/3/1). The item name is
+tinted by rank (via item.textColor) and prefixed with the rank word; params are
+boosted +5% per rank. Var87 is a floor-luck hook for deeper-better drops in a
+later pass. Essences stay stackable for now (Phase C).
+
+Needs in-game verification (rarity rolls at item-acquire runtime): start a game,
+check starter gear / shop / chest drops show coloured rank names.
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
